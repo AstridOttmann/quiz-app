@@ -1,0 +1,60 @@
+.about-me {
+  text-align: center;
+}
+
+.about-me__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-me__picture {
+  border-radius: 20em;
+}
+
+.counter__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.counter__item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 0;
+}
+
+.counter__text {
+  font-size: 20px;
+}
+
+.counter__icon {
+  position: unset;
+  width: 45px;
+}
+
+.settings {
+  margin: 20px 50px 100px 50px;
+  padding: 20px;
+}
+
+.settings__header {
+  text-align: center;
+}
+
+.dark-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
