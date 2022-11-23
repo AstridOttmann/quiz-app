@@ -6,7 +6,7 @@
   max-width: 800px;
   margin: 100px auto;
   padding: 20px;
-  background-color: antiquewhite;
+  background-color: var(--question-card-color);
   opacity: 0.95;
 }
 

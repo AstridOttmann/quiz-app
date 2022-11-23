@@ -12,7 +12,7 @@
 body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
-  background-color: #f0e6e4;
+  background-color: var(--background-color);
 }
 
 body.dark {
@@ -24,7 +24,7 @@ header {
   border: 2px solid #000000;
   text-align: center;
   width: 100%;
-  background-color: #dea350;
+  background-color: var(--header-footer-color);
 }
 
 main {

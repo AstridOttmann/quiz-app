@@ -12,7 +12,7 @@ footer {
 .navbar {
   display: flex;
   gap: 10px;
-  background-color: #dea350;
+  background-color: var(--header-footer-color);
 }
 
 .navbar__link {
@@ -24,6 +24,6 @@ footer {
 }
 
 .active {
-  background-color: #ba563f;
+  background-color: var(--active-color);
   color: white;
 }
