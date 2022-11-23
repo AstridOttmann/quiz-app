@@ -1,0 +1,29 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  background-color: #dea350;
+}
+
+.navbar__link {
+  width: 60px;
+  height: 60px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.active {
+  background-color: #ba563f;
+  color: white;
+}
