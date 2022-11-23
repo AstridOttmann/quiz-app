@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #f0e6e4;
+  --header-footer-color: #dea350;
+  --question-card-color: antiquewhite;
+  --active-color: #ba563f;
+}
+
 body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
