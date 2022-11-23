@@ -10,7 +10,8 @@
 }
 
 .about-me__picture {
-  border-radius: 20em;
+  border-radius: 100rem;
+  width: 300px;
 }
 
 .counter__container {
