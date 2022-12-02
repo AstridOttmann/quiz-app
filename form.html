@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="form.js" defer></script>
   </head>
   <body data-js="body">
     <header>
@@ -13,28 +14,23 @@
     </header>
 
     <main>
-    <section class="create-card">
-        <h2 class="create-card__title">Create your own Question-Card #</h2>
-        <form>
-            <label for="your-question">Your Question: 
+    <section class="create-card" data-js="create-card">
+        <h2 class="create-card__title" id="form-title">Create your own Question-Card #</h2>
+        <form aria-labelledby="form-title" data-js="create-card-form">
+            <label for="your-question">Your Question: </label>
                 <textarea 
-                id="your-question" 
-                name="your-question"
-                rows="4">
+                    id="your-question" 
+                    name="your-question" 
+                    data-js="questionInputField" 
+                    maxlength="150" required>
                 </textarea>
-            </label>
-            <label for="your-answer">Your Answer: 
-                <textarea 
-                id="your-answer" 
-                name="your-answer"
-                rows="4">
-                </textarea>
-            </label>
-            <label for="badges">Add Categories: 
+                <small class="form__character-count"><span data-js="amountLeft"></span> characters left</small>
+            <label for="your-answer">Your Answer: </label>
+            <textarea id="your-answer" name="your-answer" data-js="answerInputField" maxlength="150" required></textarea>
+                <small class="form__character-count"><span data-js="amountLeft"></span> characters left</small>
+            <label for="badges">Add Categories: </label>
                 <input type="text" id="badges" />
-            </label>  
             <button type="submit" name="submit" class="create-card__button">Send your card</button>  
-            
         </form>
     </section>
     </main>

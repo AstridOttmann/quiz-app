@@ -3,21 +3,22 @@ form {
   border: 2px solid var(--active-color);
   box-shadow: 0.3em 0.4em 1em var(--active-color);
   border-radius: 5px;
-  padding: 20px;
+  padding: 1.5em;
 }
 
 .create-card__title {
   text-align: center;
 }
+
 textarea,
-input {
+input,
+small {
   display: block;
   width: 100%;
-  min-width: 9em;
   margin: 1em auto;
 }
-input {
-  display: block;
+small {
+  text-align: right;
 }
 
 label {
@@ -27,7 +28,7 @@ label {
 
 .create-card__button {
   display: block;
-  min-width: 9em;
+  min-width: 8em;
   margin: 2em auto;
   padding: 0.4em;
   font-size: 1em;
