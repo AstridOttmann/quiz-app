@@ -28,11 +28,6 @@ bookmarkButton5.addEventListener("click", () => {
 const answerButton = document.querySelector('[data-js="answer-button1"]');
 const answerText = document.querySelector('[data-js="answer1"]');
 
-/* answerButton.addEventListener("click", () => {
-  output.textContent = "The statement is true.";
-  answerButton.innerHTML = "Hide Answer";
-});*/
-
 answerButton.addEventListener("click", () => {
   answerText.classList.toggle("hidden");
 

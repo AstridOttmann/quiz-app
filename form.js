@@ -2,7 +2,17 @@ console.clear();
 
 const form = document.querySelector('[data-js="create-card-form"]');
 const formSection = document.querySelector('[data-js="create-card"]');
+const questionInputField = document.querySelector(
+  '[data-js="questionInputField"]'
+);
+const answerInputField = document.querySelector('[data-js="answerInputField"]');
 
+const amountLeftQuestion = document.querySelector(
+  '[data-js="amountLeftQuestion"]'
+);
+const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
+amountLeftQuestion.textContent = "150";
+amountLeftAnswer.textContent = "150";
 //submit event:
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -53,7 +63,23 @@ form.addEventListener("submit", (event) => {
   form["your-question"].focus();
 });
 //counter:
-const questionInputField = document.querySelector(
+
+function countBackwards(event) {
+  const inputField = event.target;
+  const maxLength = inputField.getAttribute("maxlength");
+
+  const updateAmountLeft = (value) => {
+    inputField === questionInputField
+      ? (amountLeftQuestion.innerText = value)
+      : (amountLeftAnswer.innerText = value);
+  };
+  updateAmountLeft(maxLength - inputField.value.length);
+}
+
+questionInputField.addEventListener("input", countBackwards);
+answerInputField.addEventListener("input", countBackwards);
+
+/*const questionInputField = document.querySelector(
   '[data-js="questionInputField"]'
 );
 const answerInputField = document.querySelector('[data-js="answerInputField"]');
@@ -73,3 +99,4 @@ function countBackwards(event) {
 
 questionInputField.addEventListener("input", countBackwards);
 answerInputField.addEventListener("input", countBackwards);
+*/

@@ -18,16 +18,11 @@
         <h2 class="create-card__title" id="form-title">Create your own Question-Card #</h2>
         <form aria-labelledby="form-title" data-js="create-card-form">
             <label for="your-question">Your Question: </label>
-                <textarea 
-                    id="your-question" 
-                    name="your-question" 
-                    data-js="questionInputField" 
-                    maxlength="150" required>
-                </textarea>
-                <small class="form__character-count"><span data-js="amountLeft"></span> characters left</small>
+            <textarea id="your-question" name="your-question" data-js="questionInputField" maxlength="150" required></textarea>
+                <small class="form__character-count"><span name="amountLeft" data-js="amountLeftQuestion"></span> characters left</small>
             <label for="your-answer">Your Answer: </label>
             <textarea id="your-answer" name="your-answer" data-js="answerInputField" maxlength="150" required></textarea>
-                <small class="form__character-count"><span data-js="amountLeft"></span> characters left</small>
+                <small class="form__character-count"><span name="amountLeft" data-js="amountLeftAnswer"></span> characters left</small>
             <label for="badges">Add Categories: </label>
                 <input type="text" id="badges" />
             <button type="submit" name="submit" class="create-card__button">Send your card</button>  
