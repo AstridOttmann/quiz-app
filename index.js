@@ -1,4 +1,35 @@
-//bookmark function
+console.clear();
+
+// show answer function
+const answerButton = document.querySelector('[data-js="answer-button1"]');
+const answerText = document.querySelector('[data-js="answer1"]');
+console.log(answerButton);
+
+answerButton.addEventListener("click", () => {
+  answerText.classList.toggle("hidden");
+
+  if (answerButton.textContent === "Show Answer") {
+    answerButton.textContent = "Hide Answer";
+    answerButton.classList.add("switchtohide");
+  } else {
+    answerButton.textContent = "Show Answer";
+    answerButton.classList.remove("switchtohide");
+  }
+});
+
+// bookmark function
+const bookmarkButtonAll = Array.from(
+  document.getElementsByClassName("question-card__bookmark-button")
+);
+console.log(bookmarkButtonAll);
+
+for (let i = 0; i <= bookmarkButtonAll.length; i++) {
+  bookmarkButtonAll[i].addEventListener("click", () => {
+    bookmarkButtonAll[i].classList.toggle("active");
+  });
+}
+
+/* alle einzeln: 
 const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
 bookmarkButton1.addEventListener("click", () => {
   bookmarkButton1.classList.toggle("active");
@@ -23,10 +54,14 @@ const bookmarkButton5 = document.querySelector('[data-js="bookmark-button5"]');
 bookmarkButton5.addEventListener("click", () => {
   bookmarkButton5.classList.toggle("active");
 });
+*/
 
-// show answer function
+/*
+// show answer function 
+(< am Ende funktioniert nicht - warum eigentlich?)
 const answerButton = document.querySelector('[data-js="answer-button1"]');
 const answerText = document.querySelector('[data-js="answer1"]');
+console.log(answerButton);
 
 answerButton.addEventListener("click", () => {
   answerText.classList.toggle("hidden");
@@ -37,3 +72,4 @@ answerButton.addEventListener("click", () => {
     answerButton.textContent = "Show Answer";
   }
 });
+*/

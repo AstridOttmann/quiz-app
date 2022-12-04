@@ -2,20 +2,27 @@ console.clear();
 
 const form = document.querySelector('[data-js="create-card-form"]');
 const formSection = document.querySelector('[data-js="create-card"]');
+
+//für counter:
 const questionInputField = document.querySelector(
   '[data-js="questionInputField"]'
 );
 const answerInputField = document.querySelector('[data-js="answerInputField"]');
-
 const amountLeftQuestion = document.querySelector(
   '[data-js="amountLeftQuestion"]'
 );
 const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
-amountLeftQuestion.textContent = "150";
-amountLeftAnswer.textContent = "150";
+
+function counterReset() {
+  amountLeftQuestion.textContent = "150";
+  amountLeftAnswer.textContent = "150";
+}
+counterReset();
+
 //submit event:
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+
   //input-object
   const formularData = new FormData(event.target);
   const data = Object.fromEntries(formularData);
@@ -61,9 +68,10 @@ form.addEventListener("submit", (event) => {
   });
   event.target.reset();
   form["your-question"].focus();
+  counterReset();
 });
-//counter:
 
+//counter:
 function countBackwards(event) {
   const inputField = event.target;
   const maxLength = inputField.getAttribute("maxlength");
