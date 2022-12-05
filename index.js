@@ -17,7 +17,19 @@ answerButton.addEventListener("click", () => {
   }
 });
 
-// bookmark function
+const bookmarkButtonAll = document.querySelectorAll(
+  '[data-js="bookmark-button"]'
+);
+console.log(bookmarkButtonAll);
+
+bookmarkButtonAll.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+  });
+});
+
+/*
+// bookmark function - meine erste Version
 const bookmarkButtonAll = Array.from(
   document.getElementsByClassName("question-card__bookmark-button")
 );
@@ -28,32 +40,6 @@ for (let i = 0; i <= bookmarkButtonAll.length; i++) {
     bookmarkButtonAll[i].classList.toggle("active");
   });
 }
-
-/* alle einzeln: 
-const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
-bookmarkButton1.addEventListener("click", () => {
-  bookmarkButton1.classList.toggle("active");
-});
-
-const bookmarkButton2 = document.querySelector('[data-js="bookmark-button2"]');
-bookmarkButton2.addEventListener("click", () => {
-  bookmarkButton2.classList.toggle("active");
-});
-
-const bookmarkButton3 = document.querySelector('[data-js="bookmark-button3"]');
-bookmarkButton3.addEventListener("click", () => {
-  bookmarkButton3.classList.toggle("active");
-});
-
-const bookmarkButton4 = document.querySelector('[data-js="bookmark-button4"]');
-bookmarkButton4.addEventListener("click", () => {
-  bookmarkButton4.classList.toggle("active");
-});
-
-const bookmarkButton5 = document.querySelector('[data-js="bookmark-button5"]');
-bookmarkButton5.addEventListener("click", () => {
-  bookmarkButton5.classList.toggle("active");
-});
 */
 
 /*
