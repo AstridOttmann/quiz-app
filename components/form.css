@@ -11,19 +11,31 @@ form {
 }
 
 textarea,
-input,
 small {
-  display: block;
+  display: inline-block;
   width: 100%;
   margin: 1em auto;
 }
+
 small {
   text-align: right;
 }
 
-label {
-  font-size: 1.2em;
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 1.5em auto;
+}
+
+legend {
   font-weight: bold;
+}
+
+.category-button {
+  margin: 5px;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .create-card__button {

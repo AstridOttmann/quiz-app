@@ -62,8 +62,10 @@ form.addEventListener("submit", (event) => {
     myAnswer.classList.toggle("hidden");
     if (myAnswerButton.textContent === "Show Answer") {
       myAnswerButton.textContent = "Hide Answer";
+      myAnswerButton.classList.add("switchtohide");
     } else {
       myAnswerButton.textContent = "Show Answer";
+      myAnswerButton.classList.remove("switchtohide");
     }
   });
   event.target.reset();

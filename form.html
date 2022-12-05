@@ -23,9 +23,52 @@
             <label for="your-answer">Your Answer: </label>
             <textarea id="your-answer" name="your-answer" data-js="answerInputField" maxlength="150" required></textarea>
                 <small class="form__character-count"><span name="amountLeft" data-js="amountLeftAnswer"></span> characters left</small>
-            <label for="badges">Add Categories: </label>
-                <input type="text" id="badges" />
+            
+         <fieldset class="categories">
+            <legend id="add-categories">Add Categories</legend>
+            <button type="button" name="category-button" class="category-button"><img src="./assets/html5-badge.svg" alt="html5-badge" /></button>
+            <button type="button" name="category-button" class="category-button"><img src="./assets/css3-badge.svg" alt="css3-badge" /></button>
+            <button type="button" name="category-button" class="category-button"><img src="./assets/visual-studio-code-badge.svg"  alt="visual studio visual-studio-code-badge" /></button>
+            <button type="button" name="category-button" class="category-button"><img src="./assets/javascript-badge.svg" alt="javascript-badge" /></button>
+        </fieldset class="categories">
+            <fieldset class="new-categories" aria-labelledby="new-categories">
+                <legend id="new-categories">You want to add a new category?</legend>
+            <label for="new-category" class="categories__checkbox"></label>
+            <textarea id="new-category" class="categories__textfield"></textarea>
+        
+        </fieldset>
+
+
+<!--
+            <ul class="categories-list"> 
+                <li>
+                    <input type="checkbox" id="category1" />
+                    <label for="category1" class="categories__checkbox
+                    ">HTML</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="category2" />
+                    <label for="category2" class="categories__checkbox
+                        ">CSS</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="category3" />
+                    <label for="category3" class="categories__checkbox
+                        ">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="category4" />
+                    <label for="category4" class="categories__checkbox
+                        ">Visual Studio Code</label>
+                </li>
+                <li>
+                    
+                </li> 
+            </ul> //-->
+
+            </fieldset>     
             <button type="submit" name="submit" class="create-card__button">Send your card</button>  
+        
         </form>
     </section>
     </main>
