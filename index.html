@@ -15,102 +15,84 @@
     <main>
       <!--first card-->
       <section class="question-card">
-        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button1">
-            <svg viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
-          </button>
-      
-          <!-- <button class="bookmark-button active">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
-          </button>  -->
-        
+        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button">
+          <svg viewBox="0 0 24 24">
+              <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
+          </svg>
+        </button>
         <h2>Question #1</h2>
         <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
         </p>
         <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button1">Show Answer</button>
-        <output data-js="answer1"></output>
+        <p data-js="answer1" class="answer hidden">I'm the answer!</p>
         <img src="./assets/html5-badge.svg" alt="html5-badge" />
         <img src="./assets/css3-badge.svg" alt="css3-badge" />
       </section>
        <!--second card-->
       <section class="question-card">
-        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button2">
+        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button">
             <svg viewBox="0 0 24 24">
                 <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
             </svg>
           </button>
         <h2>Question #2</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
-        <button class="question-card__answer-button" aria-label="click to show answer">Show Answer</button>
+        <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button">Show Answer</button>
         <br />
-        <img src="./assets/html5-badge.svg" alt="html5-badge" />
+        <div>
+          <img src="./assets/html5-badge.svg" alt="html5-badge" />
         <img src="./assets/css3-badge.svg" alt="css3-badge" />
+        </div>
+        
       </section>
        <!--third card-->
       <section class="question-card">
-        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button3">
-            <svg viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
-          </button>
-      
-          <!-- <button class="bookmark-button active">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
-          </button>  -->
-        
+        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
+          </svg>
+        </button>
         <h2>Question #3</h2>
         <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
         </p>
-        <button class="question-card__answer-button" aria-label="click to show answer" data-js="bookmark-button">Show Answer</button>
+        <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button">Show Answer</button>
         <br />
         <img src="./assets/html5-badge.svg" alt="html5-badge" />
         <img src="./assets/css3-badge.svg" alt="css3-badge" />
-        <img src="./assets/visual-studio-code-badge.svg"  alt="visual studio visual-studio-code-badge" />
+        <img src="./assets/visual-studio-code-badge.svg"  alt="visual-studio-code-badge" name="badge" class="badge"/>
       </section>
        <!--fourth card-->
       <section class="question-card">
-        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button4">
-            <svg data-js="bookmark-button" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
+        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
+        </svg>
           </button>
-      
-          <!-- <button class="bookmark-button active">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-            </svg>
-          </button>  -->
-        
         <h2>Question #4</h2>
         <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
         </p>
-        <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button5">Show Answer</button>
+        <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button4">Show Answer</button>
         <br />
         <img src="./assets/html5-badge.svg" alt="html5-badge" />
         <img src="./assets/css3-badge.svg" alt="css3-badge" />
       </section>
        <!--fifth card-->
       <section class="question-card">
-        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button5">
+        <button class="question-card__bookmark-button" aria-label="click to bookmark" data-js="bookmark-button">
             <svg viewBox="0 0 24 24">
                 <path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
             </svg>
         </button>
         <h2>Question #5</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-        <button class="question-card__answer-button" aria-label="click to show answer">Show Answer</button>
+        <button class="question-card__answer-button" aria-label="click to show answer" data-js="answer-button">Show Answer</button>
         <br />
-        <img src="./assets/html5-badge.svg" alt="html5-badge" />
-        <img src="./assets/css3-badge.svg" alt="css3-badge" />
-        <img src="./assets/javascript-badge.svg" alt="javascript-badge"/>   
+        <img src="./assets/html5-badge.svg" alt="html-badge" name="badge" class="badge"/>
+        <img src="./assets/css3-badge.svg" alt="css-badge" name="badge" class="badge"/>
+        <img src="./assets/javascript-badge.svg" alt="javascript-badge" name="badge" class="badge"/>   
       </section>
     </main>
     <footer>
@@ -126,6 +108,12 @@
                     </svg>
                   </button>
             </a>
+            <a href="form.html" class="navbar__link"aria-label="swich to form-page">
+              <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.9 4 4 4H20C21.11 4 22 4.89 22 6V13.81C21.12 13.3 20.09 13 19 13C15.69 13 13 15.69 13 19C13 19.34 13.04 19.67 13.09 20M18 15V18H15V20H18V23H20V20H23V18H20V15H18Z" />
+              </svg>
+          </a>
+         
             <a href="profile.html" class="navbar__link" aria-label="switch to profile-page">
                 <svg viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
